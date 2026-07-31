@@ -1,3 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Azmi Tutorial & Private Tuition in Nerul, Navi Mumbai. Concept-led coaching for Classes 7 to 12, SSC, CBSE and ICSE.">
+  <meta name="theme-color" content="#075f82">
+  <title>Azmi Tutorial & Private Tuition | Nerul, Navi Mumbai</title>
+  <style>
+:root{--ink:#075f82;--ink-2:#087da6;--paper:#eef9ff;--cream:#ffffff;--gold:#12aee0;--line:#d5edf7;--muted:#526f7c;--white:#fff;--shadow:0 20px 55px rgba(0,111,155,.13)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}
+body.menu-open{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+.container{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:fixed;left:16px;top:-60px;background:#fff;padding:10px 16px;z-index:999}.skip-link:focus{top:16px}
+.topbar{background:var(--ink);color:#dce4df;font-size:13px;letter-spacing:.02em}
+.topbar-inner{height:36px;display:flex;align-items:center;justify-content:space-between}.topbar p{margin:0}.topbar a{font-weight:600}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.95);border-bottom:1px solid rgba(16,43,46,.1);backdrop-filter:blur(12px)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:11px;line-height:1}.brand>span:not(.az-wordmark){display:flex;flex-direction:column;gap:6px}.brand strong{font-family:Arial,Helvetica,sans-serif;font-size:20px;letter-spacing:.12em}.brand small{font-size:11px;color:var(--muted)}
+.az-wordmark{display:grid!important;place-items:center;flex:none;width:50px;height:50px;border:2px solid var(--ink);color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:700;letter-spacing:-.08em;line-height:1}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}.nav-links>a:not(.button){position:relative}.nav-links>a:not(.button)::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--gold);transition:.25s}.nav-links>a:hover::after{right:0}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 25px;background:var(--ink);color:#fff;border:1px solid var(--ink);font-weight:600;font-size:14px;letter-spacing:.01em;transition:transform .2s,background .2s}.button:hover{background:#204a4d;transform:translateY(-2px)}.button-small{min-height:43px;padding:0 18px}
+.menu-button{display:none;position:relative;z-index:60;flex:0 0 50px;width:50px;height:50px;padding:13px;border:1px solid #bfe4f2;border-radius:14px;background:#eef9ff;box-shadow:0 8px 22px rgba(7,95,130,.14);cursor:pointer}.menu-button span{display:block;height:2px;background:var(--ink);margin:5px 0;border-radius:3px;transition:.2s}.menu-button[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.menu-button[aria-expanded="true"] span:nth-child(2){opacity:0}.menu-button[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.hero{background:var(--paper);overflow:hidden}
+.hero-grid{min-height:640px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:60px;padding-top:52px;padding-bottom:58px}
+.eyebrow{margin:0 0 20px;color:#92702f;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.08;letter-spacing:-.04em;margin-top:0}
+h1{font-size:clamp(48px,6vw,78px);margin-bottom:28px}h1 em{font-style:normal;color:#b1873f}
+.hero-text{max-width:590px;font-size:18px;color:#536264;margin:0 0 34px}.hero-actions{display:flex;align-items:center;gap:27px}.text-link{display:inline-flex;align-items:center;gap:12px;font-size:14px;font-weight:700}.text-link span{font-size:21px;transition:transform .2s}.text-link:hover span{transform:translateX(4px)}
+.trust-row{display:flex;align-items:center;gap:10px;margin-top:42px;font-size:13px;color:#5d6b6d}.trust-row strong{font-size:24px;color:var(--ink)}.stars{color:#b5842d;letter-spacing:2px}
+.hero-visual{position:relative;height:500px;border:1px solid rgba(16,43,46,.18);background:#e7e1d5;overflow:hidden}
+.hero-visual::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 0 49.8%,rgba(16,43,46,.1) 50%,transparent 50.2%),repeating-linear-gradient(0deg,transparent 0 59px,rgba(16,43,46,.055) 60px)}
+.visual-card{position:absolute;z-index:2;background:var(--cream);box-shadow:var(--shadow)}
+.main-card{left:11%;top:13%;width:69%;height:67%;padding:42px;background:var(--ink);color:#fff}.main-card::after{content:"AZ";position:absolute;right:24px;bottom:2px;font-family:"Libre Franklin";font-weight:700;font-size:90px;color:rgba(255,255,255,.055)}.main-card>p{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#d7ba80}.main-card>strong{display:block;font-family:"Libre Franklin";font-size:31px;line-height:1.25;letter-spacing:-.03em;margin-top:42px}.subject-lines{position:absolute;left:42px;right:42px;bottom:32px;display:grid;gap:8px}.subject-lines span{border-top:1px solid rgba(255,255,255,.2);padding-top:7px;font-size:9px;letter-spacing:.14em}
+.result-card{right:4%;top:8%;padding:18px 22px;width:145px}.result-card small,.result-card span{display:block;color:var(--muted);font-size:10px}.result-card strong{font-size:42px;line-height:1.1;color:#aa7d2d}
+.board-card{right:0;bottom:10%;display:flex;gap:16px;padding:14px 19px;font-size:10px;font-weight:700;letter-spacing:.1em}
+.orbit{position:absolute;border:1px solid rgba(198,154,75,.48);border-radius:50%}.orbit-one{width:210px;height:210px;right:-115px;bottom:-30px}.orbit-two{width:120px;height:120px;right:-70px;bottom:15px}
+.hero-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.band-grid{display:grid;grid-template-columns:repeat(4,1fr)}.band-grid div{padding:23px 28px;border-right:1px solid var(--line)}.band-grid div:first-child{border-left:1px solid var(--line)}.band-grid strong,.band-grid span{display:block}.band-grid strong{font-size:15px}.band-grid span{font-size:11px;color:var(--muted);margin-top:3px}
+.section{padding:110px 0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:110px}.intro h2,.section-heading h2,.enquiry-section h2,.contact h2{font-size:clamp(38px,4vw,58px);margin:0}.intro-copy>p{font-size:17px;color:#536264;margin:0 0 22px}.signature{display:flex;align-items:center;gap:16px;margin-top:42px}.signature>span{width:54px;height:54px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:"Libre Franklin";font-weight:700}.signature p{margin:0;display:flex;flex-direction:column}.signature small{color:var(--muted)}
+.programmes{background:#f0eee8}.section-heading{display:grid;grid-template-columns:1.4fr .6fr;gap:80px;align-items:end;margin-bottom:55px}.section-heading>p{color:var(--muted);margin:0 0 5px}
+.programme-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #cfcac0}.programme{padding:39px;background:#f8f6f1;min-height:480px;border-right:1px solid #cfcac0;display:flex;flex-direction:column}.programme:last-child{border-right:0}.programme.featured{background:var(--ink);color:#fff}.programme-number{font-size:12px;color:#9c7b3f}.programme-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;margin:60px 0 12px;color:#a47c35}.programme h3{font-size:29px;margin-bottom:18px}.programme>p:not(.programme-label){color:#687477}.programme.featured>p:not(.programme-label){color:#c5ceca}.programme ul{list-style:none;padding:0;margin:auto 0 0}.programme li{padding:12px 0;border-top:1px solid rgba(100,110,110,.25);font-size:13px}.boards{display:flex;align-items:center;gap:38px;margin-top:25px;font-size:13px}.boards span{color:var(--muted);margin-right:auto}.boards strong{letter-spacing:.12em}
+.method{padding:0;background:var(--cream)}.method-grid{display:grid;grid-template-columns:.8fr 1.2fr;min-height:625px}.method-panel{background:var(--ink);color:#fff;padding:90px 70px;margin-left:calc((100vw - min(1180px,calc(100vw - 48px)))/-2)}.light{color:#d5b774}.method-panel h2{font-size:50px}.method-panel>p:not(.eyebrow){color:#bdc8c5;max-width:430px}.light-link{color:#fff;margin-top:35px}.steps{list-style:none;padding:50px 0 50px 80px;margin:0;display:grid;grid-template-columns:1fr 1fr}.steps li{padding:38px;border-bottom:1px solid var(--line)}.steps li:nth-child(odd){border-right:1px solid var(--line)}.steps span{color:#a47c35;font-size:12px}.steps h3{font-size:25px;margin:20px 0 10px}.steps p{color:var(--muted);font-size:14px;margin:0}
+.results-grid{display:grid;grid-template-columns:2fr repeat(2,1fr);border:1px solid var(--line)}.results-grid article{min-height:170px;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:end;background:#fff}.results-grid article:nth-child(3n){border-right:0}.results-grid article:nth-last-child(-n+3){border-bottom:0}.results-grid strong{font-family:"Libre Franklin";font-size:40px;line-height:1}.results-grid p{margin:10px 0 0;color:var(--muted);font-size:13px}.results-grid .result-top{grid-row:span 2;min-height:340px;background:var(--paper);justify-content:center}.result-top small{text-transform:uppercase;letter-spacing:.13em;color:#9a7838}.results-grid .result-top strong{font-size:105px;color:var(--ink);margin-top:28px}.result-top strong span{font-size:38px;color:#b1883d}.results-note{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+.achievements{background:linear-gradient(180deg,#fff 0%,#f2faff 100%)}
+.achievers-layout{display:grid;grid-template-columns:minmax(250px,.72fr) 1.7fr;gap:34px;align-items:start}
+.achievers-poster{margin:0;padding:12px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);position:sticky;top:150px}
+.achievers-poster img{display:block;width:100%;height:auto;border-radius:16px;opacity:1;visibility:visible}
+.achiever-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.achiever-card{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 15px 35px rgba(0,111,155,.08)}
+.achiever-card img{display:block;width:100%;height:auto;aspect-ratio:202/345;object-fit:contain;background:#e8f6fc;opacity:1;visibility:visible}
+.achiever-card>div{padding:17px 18px 20px;position:relative}
+.achiever-card small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.12em}
+.achiever-card h3{font-family:Arial,Helvetica,sans-serif;font-size:17px;letter-spacing:-.02em;margin:6px 48px 0 0}
+.achiever-card strong{position:absolute;right:17px;bottom:18px;color:#087da6;font-size:21px;line-height:1}
+.achiever-card .rank{position:absolute;z-index:2;left:12px;top:12px;display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:#fff;color:#075f82;font-size:11px;font-weight:800;box-shadow:0 7px 18px rgba(7,95,130,.18)}
+.achiever-card.top-achiever{border-color:#8fdcf4;box-shadow:0 18px 40px rgba(8,125,166,.16)}
+.moments{background:#eef9ff}
+.moments-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.moment-card{margin:0;overflow:hidden;border-radius:24px;background:#fff;box-shadow:0 18px 45px rgba(0,111,155,.1)}
+.moment-card.moment-wide{grid-column:span 2}
+.moment-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center;opacity:1;visibility:visible;transition:transform .35s ease}
+.moment-card.moment-wide img{aspect-ratio:16/8.7}
+.moment-card:hover img{transform:scale(1.015)}
+.moment-card figcaption{display:flex;align-items:start;justify-content:space-between;gap:22px;padding:22px 24px}
+.moment-card figcaption strong{font-size:17px}
+.moment-card figcaption span{max-width:420px;color:var(--muted);font-size:13px;text-align:right}
+.reviews{background:linear-gradient(135deg,#075f82,#087da6);color:#fff}.reviews>.container{display:grid;grid-template-columns:.32fr .68fr;gap:60px}.review-score{border-right:1px solid rgba(255,255,255,.18);padding-right:45px}.review-score>strong{display:block;font-family:Arial,Helvetica,sans-serif;font-size:96px;line-height:1}.review-score>p:last-child{color:#d4eff8;font-size:13px}.reviews-content{min-width:0}.review-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}.review{display:block;padding:25px;border:1px solid rgba(255,255,255,.18);border-radius:20px;background:rgba(255,255,255,.09);animation:none}.review:first-child{grid-column:span 2}.review blockquote{font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.65;letter-spacing:-.01em;margin:0 0 24px}.review:first-child blockquote{font-size:22px}.review>p{display:flex;flex-direction:column;margin:0}.review>p span{font-size:12px;color:#cbe8f2}.review-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:26px}.review-button{background:#fff;border-color:#fff;color:#075f82;box-shadow:none}.review-button:hover{background:#eaf8ff;color:#075f82}.review-write{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:700}.review-write span{font-size:20px}
+.enquiry-section{background:var(--paper)}.enquiry-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:95px}.enquiry-grid>div>p:not(.eyebrow){color:var(--muted);font-size:17px}.contact-mini{border-top:1px solid var(--line);margin-top:45px;padding-top:25px;display:grid;gap:18px}.contact-mini a,.contact-mini p{display:flex;flex-direction:column;margin:0}.contact-mini span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+.enquiry-form{background:#fff;padding:46px;box-shadow:var(--shadow)}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{margin-bottom:20px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:8px}.field input,.field select{width:100%;height:52px;border:1px solid #c9cbc6;background:#fff;padding:0 15px;color:var(--ink);border-radius:0}.field input:focus,.field select:focus{outline:2px solid rgba(198,154,75,.35);border-color:#9d792f}.form-button{width:100%;border:0;cursor:pointer}.form-note{text-align:center;color:var(--muted);font-size:11px;margin:11px 0 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.contact-card address{font-style:normal;color:var(--muted);font-size:17px;margin-top:30px}.location-note{font-size:13px;color:#997735}.contact-actions{display:flex;align-items:center;gap:26px;margin-top:32px}.map-card{position:relative;min-height:440px;background:#e5e1d6;overflow:hidden}.map-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(16,43,46,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(16,43,46,.08) 1px,transparent 1px);background-size:52px 52px;transform:rotate(12deg) scale(1.3)}.map-road{position:absolute;background:#faf8f0;box-shadow:0 0 0 1px #d3d0c7}.road-one{width:140%;height:28px;top:45%;left:-20%;transform:rotate(-18deg)}.road-two{width:28px;height:140%;top:-20%;left:58%;transform:rotate(24deg)}.map-pin{position:absolute;left:53%;top:38%;width:72px;height:72px;border-radius:50% 50% 50% 8px;background:var(--ink);color:#fff;transform:rotate(-45deg);display:grid;place-items:center;box-shadow:0 14px 30px rgba(16,43,46,.28)}.map-pin span{transform:rotate(45deg);font-family:"Libre Franklin";font-weight:700}.map-card>p{position:absolute;left:25px;bottom:22px;background:#fff;padding:15px 20px;margin:0;display:flex;flex-direction:column;box-shadow:var(--shadow)}.map-card>p span{font-size:11px;color:var(--muted)}
+footer{background:#0a2022;color:#fff;padding:60px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr .7fr .8fr;gap:45px;align-items:start}.footer-brand{display:flex;gap:14px;align-items:center}.footer-brand>div{display:flex;flex-direction:column}.footer-brand strong{font-family:"Libre Franklin";letter-spacing:.12em}.footer-brand span{font-size:11px;color:#aeb9b6}.footer-grid>p{margin:0;color:#aeb9b6;font-size:13px}.footer-links{display:grid;gap:8px;font-size:13px}.footer-grid>div:last-child{display:flex;flex-direction:column}.footer-grid small{color:#aeb9b6}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:45px;padding-top:20px;display:flex;justify-content:space-between;color:#8fa09c;font-size:11px}
+.floating-call{position:fixed;right:20px;bottom:20px;z-index:45;background:var(--gold);color:#102b2e;display:flex;align-items:center;gap:15px;padding:13px 14px 13px 18px;font-size:13px;font-weight:700;box-shadow:0 10px 35px rgba(16,43,46,.22)}.floating-call b{width:28px;height:28px;background:rgba(255,255,255,.4);display:grid;place-items:center}
+.footer-brand .footer-mark{display:grid!important;width:50px;height:50px;border-color:var(--gold);color:#fff;font-size:22px}
+
+/* Bright, welcoming AZ Quality Coaching visual direction */
+body{background:#fff;color:#123b4d}
+h1,h2,h3{font-family:Arial,Helvetica,sans-serif;letter-spacing:-.035em}
+.topbar{background:#075f82}
+.site-header{background:rgba(255,255,255,.96);border-bottom-color:#d5edf7}
+.nav{height:92px}
+.official-logo{width:132px;height:66px;object-fit:contain;background:#fff}
+.brand>span:not(.az-wordmark){gap:5px}
+.button{background:#087da6;border-color:#087da6;border-radius:12px;box-shadow:0 9px 22px rgba(8,125,166,.16)}
+.button:hover{background:#069bd0}
+.hero{background:linear-gradient(135deg,#f7fcff 0%,#eaf8ff 62%,#dff5ff 100%)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(18,174,224,.09);pointer-events:none}
+.hero{position:relative}.hero::before{width:330px;height:330px;left:-170px;top:90px}.hero::after{width:220px;height:220px;right:5%;top:40px}
+h1 em{color:#0aa6d8}
+.eyebrow{color:#087da6}
+.hero-visual{border:0;border-radius:32px;background:linear-gradient(145deg,#ccefff,#f7fcff);box-shadow:0 26px 70px rgba(0,111,155,.17)}
+.hero-visual::before{background:radial-gradient(circle at 20% 25%,rgba(255,255,255,.95) 0 7px,transparent 8px),radial-gradient(circle at 75% 68%,rgba(18,174,224,.18) 0 10px,transparent 11px)}
+.main-card{border-radius:24px;background:linear-gradient(145deg,#087da6,#065d7d)}
+.result-card,.board-card{border-radius:16px}
+.result-card strong{color:#08a7d9}
+.orbit{border-color:rgba(18,174,224,.45)}
+.hero-band{border-color:#d5edf7}.band-grid div{border-color:#d5edf7}
+.intro,.achievements,.contact{background:#fff}
+.signature>span{background:#0aa6d8}
+.programmes{background:#f2faff}
+.programme-grid{border:0;gap:18px}
+.programme{border:1px solid #d5edf7!important;border-radius:22px;background:#fff;min-height:450px;box-shadow:0 15px 35px rgba(0,111,155,.07)}
+.programme.featured{background:linear-gradient(145deg,#087da6,#075f82)}
+.programme li{border-color:#d8edf5}
+.boards{background:#fff;border-radius:16px;padding:18px 24px}
+.method{background:#fff}.method-panel{background:linear-gradient(145deg,#087da6,#075f82)}
+.steps li{border-color:#d5edf7}.steps span{color:#0aa6d8}
+.results-grid{border-color:#d5edf7;border-radius:24px;overflow:hidden}
+.results-grid article{border-color:#d5edf7}
+.results-grid .result-top{background:#eaf8ff}.result-top small{color:#087da6}.result-top strong span{color:#0aa6d8}
+.reviews{background:linear-gradient(135deg,#075f82,#087da6)}
+.enquiry-section{background:#eef9ff}
+.enquiry-form{border-radius:24px}
+.field input,.field select{border-color:#c8e6f1;border-radius:10px}
+.contact-mini,.footer-bottom{border-color:rgba(255,255,255,.18)}
+.map-card{border-radius:26px;background:#dff4fc}.map-pin{background:#087da6}
+footer{background:#06465f}
+.footer-logo{width:125px;height:63px;border-radius:8px}
+.floating-call{background:#0aa6d8;color:#fff;border-radius:14px}
+@media(max-width:1120px){.nav-links{position:fixed;z-index:55;inset:128px 0 0;background:#fff;padding:24px 28px 34px;display:flex;flex-direction:column;align-items:stretch;gap:4px;overflow-y:auto;transform:translateX(100%);transition:.25s;box-shadow:-18px 20px 50px rgba(7,95,130,.14)}.nav-links.open{transform:none}.nav-links>a:not(.button){display:block;width:100%;padding:14px 16px;border-bottom:1px solid #d5edf7;border-radius:10px;color:#075f82;font-size:16px}.nav-links>a:not(.button):hover{background:#eef9ff}.nav-links>a:not(.button)::after{display:none}.nav-links .button{width:100%;margin-top:16px}.menu-button{display:block}.brand{min-width:0}.brand>span{min-width:0}}
+@media(max-width:900px){.official-logo{width:110px;height:56px}.programme-grid{gap:16px}.method-panel{border-radius:0}.achievers-layout{grid-template-columns:1fr}.achievers-poster{position:relative;top:auto;max-width:430px;margin:0 auto 8px}.achiever-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.nav{height:76px}.official-logo{width:92px;height:48px}.hero-visual{border-radius:24px}.programme{border-radius:18px}.footer-logo{width:108px;height:54px}}
+@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media (max-width:900px){
+  .hero-grid,.intro-grid,.section-heading,.method-grid,.reviews>.container,.enquiry-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding-top:75px}.hero-visual{height:440px}.band-grid{grid-template-columns:1fr 1fr}.band-grid div:nth-child(odd){border-left:1px solid var(--line)}
+  .intro-grid,.enquiry-grid{gap:50px}.section-heading{gap:25px}.programme-grid{grid-template-columns:1fr}.programme{border-right:0;border-bottom:1px solid #cfcac0;min-height:390px}.programme:last-child{border-bottom:0}
+  .method-panel{margin:0 -24px;padding:75px 35px}.steps{padding:35px 0}.review-score{border-right:0;border-bottom:1px solid rgba(255,255,255,.16);padding-bottom:40px}.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .container{width:min(100% - 32px,1180px)}.topbar-inner p{display:none}.topbar-inner{justify-content:center}.nav{height:76px;gap:10px}.brand{gap:7px}.brand img,.official-logo{width:86px;height:46px}.brand strong{font-size:15px}.brand small{font-size:9px}.menu-button{flex-basis:48px;width:48px;height:48px}.nav-links{inset:112px 0 0;padding:28px 20px}
+  .hero-grid{min-height:auto;padding:62px 0 42px;gap:45px}h1{font-size:47px}.hero-text{font-size:16px}.hero-actions{align-items:flex-start;flex-direction:column}.trust-row{flex-wrap:wrap}.hero-visual{height:370px}.main-card{left:5%;top:12%;width:79%;height:70%;padding:28px}.main-card>strong{font-size:24px;margin-top:35px}.subject-lines{left:28px;right:28px}.result-card{width:125px;padding:13px;right:2%}.result-card strong{font-size:35px}
+  .band-grid div{padding:18px 15px}.section{padding:78px 0}.intro h2,.section-heading h2,.enquiry-section h2,.contact h2{font-size:38px}.programme{padding:30px}.boards{gap:17px;flex-wrap:wrap}.boards span{width:100%}
+  .method-panel h2{font-size:39px}.steps{grid-template-columns:1fr}.steps li,.steps li:nth-child(odd){border-right:0}.steps li:last-child{border-bottom:0}
+  .results-grid{grid-template-columns:1fr 1fr}.results-grid .result-top{grid-column:span 2;grid-row:auto;min-height:270px}.results-grid article:nth-child(3n){border-right:1px solid var(--line)}.results-grid article:nth-child(odd){border-right:0}.results-grid article:nth-last-child(-n+3){border-bottom:1px solid var(--line)}.results-grid article:last-child{border-bottom:0}.results-grid article:nth-last-child(2){border-bottom:0}.results-grid .result-top strong{font-size:86px}
+  .achiever-grid{grid-template-columns:1fr 1fr;gap:12px}.achiever-card{border-radius:17px}.achiever-card>div{padding:14px 12px 16px}.achiever-card h3{font-size:14px;margin-right:0;min-height:38px}.achiever-card strong{position:static;display:block;margin-top:8px;font-size:20px}.achiever-card .rank{width:32px;height:32px;left:9px;top:9px}.moments-grid{grid-template-columns:1fr;gap:16px}.moment-card.moment-wide{grid-column:auto}.moment-card.moment-wide img,.moment-card img{aspect-ratio:4/3}.moment-card figcaption{display:block;padding:18px}.moment-card figcaption span{display:block;margin-top:6px;text-align:left}
+  .review-score>strong{font-size:76px}.review-list{grid-template-columns:1fr}.review:first-child{grid-column:auto}.review,.review:first-child{padding:20px}.review blockquote,.review:first-child blockquote{font-size:17px}.review-actions{align-items:stretch;flex-direction:column;gap:16px}.review-button{width:100%}.review-write{justify-content:center}.enquiry-form{padding:28px 20px}.field-row{grid-template-columns:1fr}.contact-actions{align-items:flex-start;flex-direction:column}.map-card{min-height:350px}.footer-grid{grid-template-columns:1fr}.footer-bottom{gap:20px;align-items:flex-start;flex-direction:column}.floating-call span{display:none}.floating-call{padding:10px}.floating-call b{background:transparent}
+}
+
+</style>
+  <style>
+    html,body{margin:0;min-height:100%;background:#ffffff;color:#123b4d;font-family:Arial,sans-serif}
+    main,section,header,footer{display:block}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <p>Admissions open for Classes 7th–12th</p>
+        <a href="tel:+919664619348">Call: +91 96646 19348</a>
+      </div>
+    </div>
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Azmi Tutorial home">
+        <img class="official-logo" src="assets/az-quality-coaching-logo.jpeg" alt="AZ Quality Coaching" width="150" height="84">
+        <span><strong>AZMI</strong><small>Tutorial & Private Tuition</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span><b class="sr-only">Open menu</b>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#achievers">Student Achievers</a>
+        <a href="#moments">AZ Moments</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-small" href="#enquiry">Book a free consultation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow">Trusted coaching in Nerul, Navi Mumbai</p>
+          <h1>Learn happily.<br><em>Grow confidently.</em></h1>
+          <p class="hero-text">Friendly, focused academic support for Classes 7th to 12th—where students feel comfortable asking questions, understanding concepts and celebrating progress.</p>
+          <div class="hero-actions">
+            <a class="button" href="#enquiry">Enquire for admission</a>
+            <a class="text-link" href="tel:+919664619348">Speak with us <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="trust-row" aria-label="Business rating">
+            <strong>5.0</strong>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <span>from 103 Google reviews</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Azmi Tutorial academic excellence">
+          <div class="visual-card main-card">
+            <p>Academic Excellence</p>
+            <strong>Learn with clarity.<br>Grow with confidence.</strong>
+            <div class="subject-lines"><span>MATHEMATICS</span><span>SCIENCE</span><span>BOARD PREPARATION</span></div>
+          </div>
+          <div class="visual-card result-card">
+            <small>Student achievement</small>
+            <strong>92%</strong>
+            <span>Top reported result</span>
+          </div>
+          <div class="visual-card board-card">
+            <span>SSC</span><span>CBSE</span><span>ICSE</span>
+          </div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+        </div>
+      </div>
+      <div class="hero-band">
+        <div class="container band-grid">
+          <div><strong>7th–12th</strong><span>Classes covered</span></div>
+          <div><strong>Online + Offline</strong><span>Flexible learning</span></div>
+          <div><strong>Personal Attention</strong><span>Support that adapts</span></div>
+          <div><strong>Nerul East</strong><span>Convenient location</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">About Azmi Tutorial</p>
+          <h2>Teaching that meets every student where they are.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Azmi Tutorial & Private Tuition provides a supportive learning environment where students can ask questions freely, strengthen fundamentals and prepare with purpose.</p>
+          <p>Our approach combines clear lectures, regular doubt-solving and individual attention—helping students improve not only their marks, but also their confidence.</p>
+          <div class="signature"><span>AZ</span><p><strong>Quality coaching</strong><small>Concepts • Consistency • Confidence</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programmes" id="programmes">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Programmes</p><h2>Structured support at every stage.</h2></div>
+          <p>Choose focused academic guidance suited to the student's class, board and learning needs.</p>
+        </div>
+        <div class="programme-grid">
+          <article class="programme featured">
+            <span class="programme-number">01</span>
+            <p class="programme-label">Foundation</p>
+            <h3>Classes 7th–10th</h3>
+            <p>Build strong subject fundamentals, improve school performance and prepare confidently for board examinations.</p>
+            <ul><li>Concept-based teaching</li><li>Regular practice and revision</li><li>Doubt-solving support</li></ul>
+          </article>
+          <article class="programme">
+            <span class="programme-number">02</span>
+            <p class="programme-label">Senior Secondary</p>
+            <h3>Classes 11th–12th</h3>
+            <p>Focused support for demanding senior-secondary subjects with systematic preparation and personal guidance.</p>
+            <ul><li>Mathematics and Physics support</li><li>Exam-focused preparation</li><li>Individual progress guidance</li></ul>
+          </article>
+          <article class="programme">
+            <span class="programme-number">03</span>
+            <p class="programme-label">Personalised</p>
+            <h3>Private & Online Tuition</h3>
+            <p>One-to-one and flexible online sessions for students who benefit from a more personalised learning pace.</p>
+            <ul><li>Private doubt sessions</li><li>Online access for NRI students</li><li>Flexible academic support</li></ul>
+          </article>
+        </div>
+        <div class="boards"><span>Boards supported</span><strong>SSC</strong><strong>CBSE</strong><strong>ICSE</strong></div>
+      </div>
+    </section>
+
+    <section class="section method">
+      <div class="container method-grid">
+        <div class="method-panel">
+          <p class="eyebrow light">The Azmi approach</p>
+          <h2>Progress is built, not rushed.</h2>
+          <p>Every lesson is designed to turn confusion into clarity through a simple, repeatable learning cycle.</p>
+          <a class="text-link light-link" href="#enquiry">Discuss your child's learning needs <span>→</span></a>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><h3>Understand</h3><p>Simple explanations establish the core concept first.</p></div></li>
+          <li><span>02</span><div><h3>Practise</h3><p>Guided problems turn understanding into ability.</p></div></li>
+          <li><span>03</span><div><h3>Review</h3><p>Regular revision identifies and closes learning gaps.</p></div></li>
+          <li><span>04</span><div><h3>Achieve</h3><p>Preparation and confidence come together in exams.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievers">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Student achievers</p><h2>Hard work, reflected in every result.</h2></div>
+          <p>Meet our achievers, arranged from the highest reported percentage to the next milestone.</p>
+        </div>
+        <div class="achievers-layout">
+          <figure class="achievers-poster">
+            <img src="./achievers-poster.png" alt="AZ Quality Coaching student achievers poster" width="1024" height="1536">
+          </figure>
+          <div class="achiever-grid" aria-label="Student achievements in descending percentage order">
+            <article class="achiever-card top-achiever"><span class="rank">01</span><img src="./achiever-piyush.png" alt="Piyush Manjhi, Class 8th, 92 percent" width="202" height="345"><div><small>Class 8th</small><h3>Piyush Manjhi</h3><strong>92%</strong></div></article>
+            <article class="achiever-card"><span class="rank">02</span><img src="./achiever-ayansh.png" alt="Ayansh, Class 4th, 84 percent" width="202" height="345"><div><small>Class 4th</small><h3>Ayansh</h3><strong>84%</strong></div></article>
+            <article class="achiever-card"><span class="rank">03</span><img src="./achiever-ayush.png" alt="Ayush Manjhi, Class 9th, 83 percent" width="200" height="345"><div><small>Class 9th</small><h3>Ayush Manjhi</h3><strong>83%</strong></div></article>
+            <article class="achiever-card"><span class="rank">04</span><img src="./achiever-ayaan.png" alt="Ayaan Balbale, Class 8th, 82 percent" width="208" height="345"><div><small>Class 8th</small><h3>Ayaan Balbale</h3><strong>82%</strong></div></article>
+            <article class="achiever-card"><span class="rank">05</span><img src="./achiever-hafsa.png" alt="Hafsa, Class 7th, 79 percent" width="202" height="344"><div><small>Class 7th</small><h3>Hafsa</h3><strong>79%</strong></div></article>
+            <article class="achiever-card"><span class="rank">06</span><img src="./achiever-mansi.png" alt="Mansi, Class 8th, 71 percent" width="202" height="344"><div><small>Class 8th</small><h3>Mansi</h3><strong>71%</strong></div></article>
+          </div>
+        </div>
+        <p class="results-note">Every percentage represents persistence, support and meaningful progress.</p>
+      </div>
+    </section>
+
+    <section class="section moments" id="moments">
+      <div class="container">
+        <div class="section-heading moments-heading">
+          <div><p class="eyebrow">AZ Moments</p><h2>Learning, celebrating and growing together.</h2></div>
+          <p>A glimpse of the friendships, celebrations and shared experiences that make the tutorial feel welcoming.</p>
+        </div>
+        <div class="moments-grid">
+          <figure class="moment-card moment-wide"><img src="./moment-celebration.png" alt="Azmi Tutorial students and teachers celebrating together" width="1618" height="972"><figcaption><strong>Celebrating together</strong><span>Achievements feel better when the whole learning community shares them.</span></figcaption></figure>
+          <figure class="moment-card"><img src="./moment-community.png" alt="Azmi Tutorial students together during a community moment" width="1570" height="1001"><figcaption><strong>A supportive community</strong><span>Friendship and encouragement beyond the classroom.</span></figcaption></figure>
+          <figure class="moment-card"><img src="./moment-outing.png" alt="Azmi Tutorial students and teachers on a group outing" width="1692" height="930"><figcaption><strong>Memories beyond class</strong><span>Time together that students remember.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="review-score">
+          <p class="eyebrow light">Parent & student experiences</p>
+          <strong>5.0</strong>
+          <span class="stars">★★★★★</span>
+          <p>Based on 103 Google reviews</p>
+        </div>
+        <div class="reviews-content">
+          <div class="review-list">
+          <article class="review active">
+            <blockquote>“I have been learning Mathematics and Physics from Hyder Azmi Sir since Grade 9, and I can confidently say he is one of the best teachers I have ever had.”</blockquote>
+            <p><strong>Zayan Diwan</strong><span>Online student • Saudi Arabia</span></p>
+          </article>
+          <article class="review">
+            <blockquote>“The teaching quality is excellent, and the environment is very supportive for students. A special thanks to Nuri teacher for being patient and dedicated.”</blockquote>
+            <p><strong>Swati Patil</strong><span>Google review</span></p>
+          </article>
+          <article class="review">
+            <blockquote>“Azmi Tutorial has made a wonderful difference in my child's growth and confidence. We are really happy with the improvement.”</blockquote>
+            <p><strong>Abdul Aziz Haji Ayub</strong><span>Parent</span></p>
+          </article>
+          </div>
+          <div class="review-actions">
+            <a class="button review-button" href="https://maps.app.goo.gl/FkVggsrocJX6v69R7" target="_blank" rel="noopener">View all Google reviews</a>
+            <a class="review-write" href="https://maps.app.goo.gl/FkVggsrocJX6v69R7" target="_blank" rel="noopener">Add your Google review <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section enquiry-section" id="enquiry">
+      <div class="container enquiry-grid">
+        <div>
+          <p class="eyebrow">Admissions open</p>
+          <h2>Let’s understand what your child needs.</h2>
+          <p>Share a few details and continue directly on WhatsApp. Our team can guide you about the suitable class format and next steps.</p>
+          <div class="contact-mini">
+            <a href="tel:+919664619348"><span>Call us</span><strong>+91 96646 19348</strong></a>
+            <p><span>Class hours</span><strong>Open until 9:00 PM</strong></p>
+          </div>
+        </div>
+        <form class="enquiry-form" id="enquiry-form">
+          <div class="field"><label for="name">Parent / Student name</label><input id="name" name="name" required autocomplete="name" placeholder="Enter full name"></div>
+          <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" required inputmode="tel" pattern="[0-9 +]{10,15}" placeholder="Enter mobile number"></div>
+          <div class="field-row">
+            <div class="field"><label for="class">Class</label><select id="class" name="class" required><option value="">Select class</option><option>7th</option><option>8th</option><option>9th</option><option>10th</option><option>11th</option><option>12th</option></select></div>
+            <div class="field"><label for="board">Board</label><select id="board" name="board" required><option value="">Select board</option><option>SSC</option><option>CBSE</option><option>ICSE</option><option>Other</option></select></div>
+          </div>
+          <div class="field"><label for="mode">Preferred learning mode</label><select id="mode" name="mode" required><option value="">Select preference</option><option>Classroom coaching</option><option>Private tuition</option><option>Online tuition</option><option>Need guidance</option></select></div>
+          <button class="button form-button" type="submit">Continue enquiry on WhatsApp</button>
+          <p class="form-note">No payment is required to send an enquiry.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <p class="eyebrow">Visit the tutorial</p>
+          <h2>Right here in Nerul East.</h2>
+          <address>Shop No. 01, Nav Prajakta Society,<br>Plot B-93, Sector 23, Nerul East,<br>Seawoods, Navi Mumbai, Maharashtra 400706</address>
+          <p class="location-note">Located near Nageshwar Talav</p>
+          <div class="contact-actions">
+            <a class="button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=AZMI+TUTORIAL+AND+PRIVATE+TUTION+Nerul+Navi+Mumbai">Get directions</a>
+            <a class="text-link" href="tel:+919664619348">Call the centre →</a>
+          </div>
+        </div>
+        <a class="map-card" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=AZMI+TUTORIAL+AND+PRIVATE+TUTION+Nerul+Navi+Mumbai" aria-label="Open Azmi Tutorial location in Google Maps">
+          <div class="map-grid"></div><div class="map-road road-one"></div><div class="map-road road-two"></div>
+          <div class="map-pin"><span>AZ</span></div><p><strong>Azmi Tutorial</strong><span>Sector 23, Nerul East</span></p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><img class="official-logo footer-logo" src="assets/az-quality-coaching-logo.jpeg" alt="AZ Quality Coaching" width="150" height="84"><div><strong>AZMI</strong><span>Tutorial & Private Tuition</span></div></div>
+      <p>Clear teaching. Personal guidance.<br>Better academic confidence.</p>
+      <div class="footer-links"><a href="#programmes">Programmes</a><a href="#achievers">Student Achievers</a><a href="#moments">AZ Moments</a><a href="#enquiry">Admission enquiry</a></div>
+      <div><a href="tel:+919664619348">+91 96646 19348</a><small>Nerul East, Navi Mumbai</small></div>
+    </div>
+    <div class="container footer-bottom"><span>© <b id="year"></b> Azmi Tutorial & Private Tuition</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <a class="floating-call" href="tel:+919664619348" aria-label="Call Azmi Tutorial"><span>Call now</span><b>↗</b></a>
+  <script>
 const menuButton = document.querySelector('.menu-button');
 const navLinks = document.querySelector('.nav-links');
 
@@ -41,3 +455,7 @@ document.querySelector('#enquiry-form')?.addEventListener('submit', (event) => {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+</script>
+</body>
+</html>
